@@ -1,0 +1,586 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <!-- Title -->
+      <title>Habitart Solutions</title>
+      <link rel="icon" type="image/x-icon" href="/assets/img/logo.png" />
+
+      <!-- Meta Tags -->
+      <meta charset="UTF-8" />
+      <meta
+         name="viewport"
+         content="width=device-width, initial-scale=1, maximum-scale=1"
+      />
+      <meta name="robots" content="index, follow" />
+      <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+      <meta name="language" content="English" />
+      <meta name="revisit-after" content=" days" />
+      <meta name="author" content="HABITART SOLUTIONS" />
+      <meta name="copyright" content="HABITART SOLUTIONS" />
+
+      <meta
+         property="og:image"
+         content="https://HABITART SOLUTIONS.in/assets/img/intro/img.png"
+      />
+      <meta name="twitter:card" content="summary_large_image" />
+      <meta
+         name="twitter:title"
+         content="HABITART SOLUTIONS - Interior Design"
+      />
+      <meta
+         name="keywords"
+         content=" Interior Design | Construction Services | Custom Furniture | Wall Murals & Painting | Themed Interiors | Appliance Procurement | enovations | Comprehensive Solutions"
+      />
+
+      <meta name="twitter:site" content="@HABITART SOLUTIONS_in" />
+
+      <!-- Mobile Meta -->
+      <meta
+         name="viewport"
+         content="width=device-width, initial-scale=1, shrink-to-fit=no"
+      />
+
+      <script type="application/ld+json">
+         {
+            "@context": "https://schema.org",
+            "@type": "Organization",
+            "url": " https://HABITART-SOLUTIONS.in",
+            "name": "HABITART SOLUTIONS",
+            "logo": "https://HABITART-SOLUTIONS.in/assets/img/logo-dark.png",
+            "sameAs": [
+               "https://www.instagram.com/habitartsolution?igsh=Ym1nMGUyb3d3NmJ0",
+               "https://www.facebook.com/profile.php?id=61561910956343&mibextid=ZbWKwL"
+            ],
+            "potentialAction": {
+               "@type": "SearchAction",
+               "target": "https://HABITART SOLUTIONS.in/?q={search_term_string}",
+               "query-input": "required name=search_term_string"
+            }
+         }
+      </script>
+
+      <!-- Mobile Meta -->
+      <meta
+         name="viewport"
+         content="width=device-width, initial-scale=1, shrink-to-fit=no"
+      />
+
+      <!-- Google fonts -->
+      <link rel="preconnect" href="https://fonts.googleapis.com" />
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+      <link
+         href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap"
+         rel="stylesheet"
+      />
+      <link
+         href="https://fonts.googleapis.com/css2?family=Syne:wght@400;500;600;700;800&display=swap"
+         rel="stylesheet"
+      />
+      <!-- Vendor CSS Files -->
+      <link
+         rel="stylesheet"
+         href="assets/plugins/normalize/normalize.min.css"
+      />
+      <link
+         rel="stylesheet"
+         href="assets/plugins/fontawesome/css/fontawesome-all.min.css"
+      />
+      <link
+         rel="stylesheet"
+         href="assets/plugins/swiper/css/swiper-bundle.min.css"
+      />
+      <link
+         rel="stylesheet"
+         href="assets/plugins/lightgallery/css/lightgallery.min.css"
+      />
+      <link rel="stylesheet" href="assets/css/style.css" />
+      <link
+         id="tt-themecss"
+         rel="stylesheet"
+         href="assets/css/dark-style.css"
+      />
+      <!-- EmailJs Cdn links -->
+      <script
+         type="text/javascript"
+         src="https://cdn.emailjs.com/dist/email.min.js"
+      ></script>
+      <script
+         type="text/javascript"
+         src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"
+      ></script>
+      <script type="text/javascript">
+         (function () {
+            emailjs.init('2oqg2XY9kp0ZiNcq4'); // Replace with your actual EmailJS user ID.
+         })();
+
+         function validateEmail(email) {
+            const re = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+            return re.test(String(email).toLowerCase());
+         }
+
+         function sendEmail(event) {
+            event.preventDefault(); // Prevent the form from submitting the default way
+
+            const name = document.getElementById('name').value;
+            const email = document.getElementById('email').value;
+            const phonenumber = document.getElementById('phonenumber').value;
+            const state = document.getElementById('state').value;
+            const message = document.getElementById('message').value;
+
+            // Validate the email address
+            if (!validateEmail(email)) {
+               alert('Invalid email address');
+               return;
+            }
+
+            const templateParams = {
+               name: name,
+               email: email,
+               phonenumber: phonenumber,
+               state: state,
+               message: message,
+            };
+
+            console.log(templateParams);
+
+            emailjs
+               .send('service_2p10z0f', 'template_ay79a5f', templateParams)
+               .then(
+                  function (response) {
+                     console.log('SUCCESS!', response.status, response.text);
+                     alert('message sent successfully!');
+                  },
+                  function (error) {
+                     console.log('FAILED...', error);
+                     alert(
+                        'Failed to send the message. Please try again later.'
+                     );
+                  }
+               );
+         }
+
+         document.addEventListener('DOMContentLoaded', function () {
+            document.getElementById('contact-form').onsubmit = sendEmail;
+         });
+      </script>
+   </head>
+
+   <body
+      id="body"
+      class="tt-transition tt-boxed tt-smooth-scroll tt-magic-cursor"
+   >
+      <main id="body-inner">
+         <div id="page-transition">
+            <div class="ptr-overlay"></div>
+            <div class="ptr-preloader">
+               <div class="ptr-prel-content">
+                  <img
+                     src="assets/img/logo-landing.png"
+                     class="ptr-prel-image tt-logo-light"
+                     alt="Logo"
+                  />
+               </div>
+            </div>
+         </div>
+
+         <div id="scroll-container">
+            <header id="tt-header" class="tt-header-fixed">
+               <div class="tt-header-inner">
+                  <div class="tt-header-col">
+                     <div class="tt-logo">
+                        <a href="index.html">
+                           <img
+                              src="assets/img/logo-landing.png"
+                              class="tt-logo-dark magnetic-item"
+                              alt="Logo"
+                           />
+                        </a>
+                     </div>
+                  </div>
+                  <div class="tt-header-col">
+                     <div id="tt-ol-menu-toggle-btn-wrap">
+                        <div
+                           class="tt-ol-menu-toggle-btn-text-wrap hide-cursor"
+                        >
+                           <div class="tt-ol-menu-toggle-btn-text">
+                              <span class="text-menu" data-hover="Open"
+                                 >Menu</span
+                              >
+                              <span class="text-close">Close</span>
+                           </div>
+                        </div>
+                        <div class="tt-ol-menu-toggle-btn-holder">
+                           <a
+                              href="#"
+                              class="tt-ol-menu-toggle-btn magnetic-item"
+                              ><span></span
+                           ></a>
+                        </div>
+                     </div>
+                     <nav class="tt-overlay-menu tt-ol-menu-count">
+                        <div class="tt-ol-menu-holder">
+                           <div class="tt-ol-menu-inner tt-wrap">
+                              <div class="tt-ol-menu-content">
+                                 <ul class="tt-ol-menu-list">
+                                    <li><a href="index.html">Home</a></li>
+                                    <li><a href="#about">About</a></li>
+                                    <li>
+                                       <a href="portfolio.html">Portfolio</a>
+                                    </li>
+                                    <li><a href="#service">Service</a></li>
+                                    <li>
+                                       <a href="#testimonial">Testimonial</a>
+                                    </li>
+                                    <li><a href="contact.html">Contact</a></li>
+                                 </ul>
+                                 <ul class="tt-ol-menu-social">
+                                    <li>
+                                       <h6 class="tt-ol-menu-social-heading">
+                                          Social Links:
+                                       </h6>
+                                    </li>
+                                    <li>
+                                       <a
+                                          href="https://www.facebook.com/profile.php?id=61561910956343&mibextid=ZbWKwL"
+                                          target="_blank"
+                                          rel="noopener"
+                                          >Facebook</a
+                                       >
+                                    </li>
+                                    <li>
+                                       <a
+                                          href="https://www.instagram.com/habitartsolution?igsh=Ym1nMGUyb3d3NmJ0"
+                                          target="_blank"
+                                          rel="noopener"
+                                          >Instagram</a
+                                       >
+                                    </li>
+                                 </ul>
+                              </div>
+                           </div>
+                        </div>
+                     </nav>
+                  </div>
+               </div>
+            </header>
+            <div id="content-wrap">
+               <div
+                  id="page-header"
+                  class="ph-cap-lg ph-ghost-scroll ph-image-cropped ph-image-cover-2 ph-content-parallax"
+               >
+                  <div class="page-header-inner tt-wrap">
+                     <div class="ph-caption">
+                        <div class="ph-caption-subtitle">
+                           <div class="ph-appear">Let's Talk</div>
+                        </div>
+                        <h1 class="ph-caption-title">
+                           <div class="ph-appear">Contact</div>
+                        </h1>
+                        <div class="ph-caption-title-ghost">
+                           <div class="ph-appear">Contact</div>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="tt-scroll-down">
+                     <a
+                        href="#page-content"
+                        class="tt-sd-inner ph-appear"
+                        data-offset="0"
+                     >
+                        <div class="tt-sd-arrow">
+                           <div class="tt-sd-arrow-inner"></div>
+                        </div>
+                        <div class="tt-sd-text">Scroll</div>
+                     </a>
+                  </div>
+               </div>
+               <div id="page-content">
+                  <div class="tt-section">
+                     <div class="tt-section-inner tt-wrap">
+                        <div class="tt-row tt-lg-row-reverse">
+                           <div class="tt-col-lg-4">
+                              <div
+                                 class="tt-heading margin-bottom-8-p anim-fadeinup"
+                              >
+                                 <h2 class="tt-heading-title">Get in Touch</h2>
+                              </div>
+                              <div class="text-gray anim-fadeinup"></div>
+                              <ul
+                                 class="tt-contact-info padding-bottom-40 anim-fadeinup"
+                              >
+                                 <li>
+                                    <span class="tt-ci-icon"
+                                       ><i class="fas fa-map-marker-alt"></i
+                                    ></span>
+                                    2nd A Cross, post, LBS Nagar, HAL,
+                                    Bengaluru,
+                                    <br />
+                                    Karnataka 560017, India
+                                 </li>
+                                 <li>
+                                    <span class="tt-ci-icon"
+                                       ><i class="fas fa-phone"></i
+                                    ></span>
+                                    <!-- <span class="tt-link">+91 7259678122</span> -->
+                                    <a
+                                       href="https://wa.me/+917259678122"
+                                       target="_blank"
+                                       class="tt-link"
+                                       >+91 7259678122</a
+                                    >
+                                 </li>
+                                 <!-- Test  -->
+                                 <li>
+                                    <span class="tt-ci-icon"
+                                       ><i class="fas fa-envelope"></i
+                                    ></span>
+                                    <a
+                                       href="mailto:habitartsolution@gmail.com"
+                                       class="tt-link"
+                                       >habitartsolution@gmail.com</a
+                                    >
+                                 </li>
+                                 <li>
+                                    <h6 class="no-margin-bottom margin-top-40">
+                                       Follow:
+                                    </h6>
+                                    <div class="social-buttons">
+                                       <ul>
+                                          <li>
+                                             <a
+                                                href="https://www.facebook.com/profile.php?id=61561910956343&mibextid=ZbWKwL"
+                                                class="magnetic-item"
+                                                target="_blank"
+                                                rel="noopener"
+                                                ><i
+                                                   class="fab fa-facebook-f"
+                                                ></i
+                                             ></a>
+                                          </li>
+                                          <li>
+                                             <a
+                                                href="https://www.instagram.com/habitartsolution?igsh=Ym1nMGUyb3d3NmJ0"
+                                                class="magnetic-item"
+                                                target="_blank"
+                                                rel="noopener"
+                                                ><i class="fab fa-instagram"></i
+                                             ></a>
+                                          </li>
+                                       </ul>
+                                    </div>
+                                 </li>
+                              </ul>
+                           </div>
+                           <div class="tt-col-lg-1"></div>
+                           <div class="tt-col-lg-7">
+                              <form
+                                 method="POST"
+                                 accept-charset="UTF-8"
+                                 class="tt-form-filled anim-fadeinup"
+                                 id="contact-form"
+                                 onsubmit="sendEmail(event)"
+                              >
+                                 <div class="tt-row">
+                                    <div class="tt-col-md-6">
+                                       <div class="tt-form-group">
+                                          <label for="name"
+                                             >Your Name
+                                             <span class="required"
+                                                >*</span
+                                             ></label
+                                          >
+                                          <input
+                                             class="tt-form-control"
+                                             type="text"
+                                             id="name"
+                                             name="Name"
+                                             placeholder=""
+                                             required
+                                          />
+                                       </div>
+                                    </div>
+                                    <div class="tt-col-md-6">
+                                       <div class="tt-form-group">
+                                          <label for="email"
+                                             >Email address
+                                             <span class="required"
+                                                >*</span
+                                             ></label
+                                          >
+                                          <input
+                                             class="tt-form-control"
+                                             type="email"
+                                             id="email"
+                                             name="Email"
+                                             placeholder=""
+                                             required
+                                          />
+                                       </div>
+                                    </div>
+                                 </div>
+                                 <div class="tt-row">
+                                    <div class="tt-col-md-6">
+                                       <div class="tt-form-group">
+                                          <label for="phonenumber"
+                                             >Mobile Number
+                                             <span class="required"
+                                                >*</span
+                                             ></label
+                                          >
+                                          <input
+                                             class="tt-form-control"
+                                             type="number"
+                                             id="phonenumber"
+                                             name="phonenumber"
+                                             placeholder=""
+                                             required
+                                             pattern="\d{10}"
+                                             maxlength="10"
+                                          />
+                                       </div>
+                                    </div>
+                                    <div class="tt-col-md-6">
+                                       <div class="tt-form-group">
+                                          <label for="state"
+                                             >State
+                                             <span class="required"
+                                                >*</span
+                                             ></label
+                                          >
+                                          <input
+                                             class="tt-form-control"
+                                             type="text"
+                                             id="state"
+                                             name="state"
+                                             placeholder=""
+                                             required
+                                          />
+                                       </div>
+                                    </div>
+                                 </div>
+
+                                 <div class="tt-form-group">
+                                    <label for="message"
+                                       >Your message
+                                       <span class="required">*</span></label
+                                    >
+                                    <textarea
+                                       class="tt-form-control"
+                                       rows="5"
+                                       id="message"
+                                       name="message"
+                                       placeholder=""
+                                       required
+                                    ></textarea>
+                                 </div>
+                                 <small class="tt-form-text"
+                                    ><em
+                                       >Fields marked with an asterisk (*) are
+                                       required!</em
+                                    ></small
+                                 >
+                                 <button
+                                    type="submit"
+                                    class="tt-btn tt-btn-primary margin-top-30"
+                                 >
+                                    <div data-hover="Send message">
+                                       Send message
+                                    </div>
+                                    <span class="tt-btn-icon"
+                                       ><i class="fas fa-paper-plane"></i
+                                    ></span>
+                                 </button>
+                              </form>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+               <footer id="tt-footer">
+                  <div class="tt-footer-inner">
+                     <div class="footer-col tt-align-center-left">
+                        <div class="footer-col-inner">
+                           <a href="#" class="tt-btn tt-btn-link scroll-to-top">
+                              <span class="tt-btn-icon"
+                                 ><i class="fas fa-arrow-up"></i
+                              ></span>
+                              <div data-hover="Back to Top">Back to Top</div>
+                           </a>
+                        </div>
+                     </div>
+                     <div class="footer-col tt-align-center order-m-last">
+                        <div class="footer-col-inner">
+                           <div class="tt-copyright text-gray">
+                              <div
+                                 data-hover="2024. Designed & Developed by HABITART SOLUTIONS"
+                              >
+                                 <i class="far fa-copyright"></i>
+                                 2024. Designed & Developed by HABITART
+                                 SOLUTIONS
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                     <div class="footer-col tt-align-center-right">
+                        <div class="footer-col-inner">
+                           <div class="footer-social">
+                              <div class="footer-social-text">
+                                 <span>Follow</span
+                                 ><i class="fas fa-share-alt"></i>
+                              </div>
+                              <div class="social-buttons">
+                                 <ul>
+                                    <li>
+                                       <a
+                                          href="https://www.facebook.com/profile.php?id=61561910956343&mibextid=ZbWKwL"
+                                          class="magnetic-item"
+                                          target="_blank"
+                                          rel="noopener"
+                                          ><i class="fab fa-facebook-f"></i
+                                       ></a>
+                                    </li>
+
+                                    <li>
+                                       <a
+                                          href="https://www.linkedin.com/in/HABITART SOLUTIONS"
+                                          class="magnetic-item"
+                                          target="_blank"
+                                          rel="noopener"
+                                          ><i class="fab fa-linkedin"></i
+                                       ></a>
+                                    </li>
+                                    <li>
+                                       <a
+                                          href="https://www.instagram.com/habitartsolution?igsh=Ym1nMGUyb3d3NmJ0"
+                                          class="magnetic-item"
+                                          target="_blank"
+                                          rel="noopener"
+                                          ><i class="fab fa-instagram"></i
+                                       ></a>
+                                    </li>
+                                 </ul>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               </footer>
+            </div>
+         </div>
+      </main>
+
+      <!--Scripts-->
+      <script src="assets/plugins/jquery/jquery.min.js"></script>
+      <script src="assets/plugins/gsap/gsap.min.js"></script>
+      <script src="assets/plugins/gsap/ScrollToPlugin.min.js"></script>
+      <script src="assets/plugins/gsap/ScrollTrigger.min.js"></script>
+      <script src="assets/plugins/smooth-scrollbar.js"></script>
+      <script src="assets/plugins/swiper/js/swiper-bundle.min.js"></script>
+      <script src="assets/plugins/isotope/imagesloaded.pkgd.min.js"></script>
+      <script src="assets/plugins/isotope/isotope.pkgd.min.js"></script>
+      <script src="assets/plugins/isotope/packery-mode.pkgd.min.js"></script>
+      <script src="assets/plugins/lightgallery/js/lightgallery-all.min.js"></script>
+      <script src="assets/plugins/jquery.mousewheel.min.js"></script>
+      <script src="assets/js/script.js"></script>
+   </body>
+</html>
