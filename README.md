@@ -40,7 +40,7 @@ Habitart Solutions specializes in innovative and personalized interior design se
 
 1. Clone the repository:
    ```bash
-   git clone https://github.com/shrenik/habitart-solutions.git
+   git clone https://github.com/VinayKRa/HabitArtSolutions-SourceCode.git
    ```
 2. Navigate to the project directory:
    ```bash
